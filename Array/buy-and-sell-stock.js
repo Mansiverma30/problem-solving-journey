@@ -21,7 +21,7 @@ function bruteForce(prices) {
 
 // Optimized Solution
 // Time complexity: O(n), Space Complexity: O(1)
-// Here I kept track of minimum from left to right, and found the profit by subtracting current price with minimum in a loop, and compared it from the maxProfit and profit, and then I returend the maxProfit
+// Here I kept track of minimum from left to right, and found the profit by subtracting current price with minimum in a loop, and compared it from the maxProfit and profit, and then I returned the maxProfit
 
 function optimized(prices) {
     let maxProfit = 0

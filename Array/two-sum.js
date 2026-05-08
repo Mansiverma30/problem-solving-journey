@@ -20,8 +20,8 @@ function bruteForce(arr, target) {
 }
 
 // Optimized Solution
-// Time complexity: O(n), Space Complexity: O(1)
-// Here I used the hash map
+// Time complexity: O(n), Space Complexity: O(n)
+// Here I stored previously seen elements in a hashmap and checked if the required complement already existed
 
 function optimized(arr, target) {
     let map = new Map()
@@ -42,3 +42,4 @@ console.log(optimized([0, 7, 1, 9], 10))
 
 // Pattern Learned:
 // Use hashmap to store previously seen values for fast lookup
+// Complement pattern: target - currentElement
