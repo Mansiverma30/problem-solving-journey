@@ -1,7 +1,12 @@
 // Problem: Two Sum
+// Input: arr = [0,7,1,9], target = 7
+// Output: [0,1]
 
-// Brute Force
-// Time: n^2, Space: 1
+// Here I've to return the indices of the two numbers such that they add upto target, if nothing return [-1,-1]
+
+// Brute Force Solution
+// Time complexity: O(n^2), Space Complexity: O(1)
+// Here I used nested loops, and check each pair and returned the indices
 
 function bruteForce(arr, target) {
     for (let i = 0; i < arr.length; i++) {
@@ -14,12 +19,14 @@ function bruteForce(arr, target) {
     return [-1, -1]
 }
 
-// Optimized
+// Optimized Solution
+// Time complexity: O(n), Space Complexity: O(1)
+// Here I used the hash map
 
 function optimized(arr, target) {
     let map = new Map()
     for (let i = 0; i < arr.length; i++) {
-        let needed = Math.abs(arr[i] - target)
+        let needed = target - arr[i]
         if (map.has(needed)) {
             let idx1 = map.get(needed)
             let idx2 = i
@@ -32,3 +39,6 @@ function optimized(arr, target) {
 
 console.log(bruteForce([0, 7, 1, 9], 8))
 console.log(optimized([0, 7, 1, 9], 10))
+
+// Pattern Learned:
+// Use hashmap to store previously seen values for fast lookup
