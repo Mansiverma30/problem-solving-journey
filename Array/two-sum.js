@@ -6,7 +6,7 @@
 
 // Brute Force Solution
 // Time complexity: O(n^2), Space Complexity: O(1)
-// Here I used nested loops, and check each pair and returned the indices
+// Here I used nested loops, and checked each pair and returned the indices
 
 function bruteForce(arr, target) {
     for (let i = 0; i < arr.length; i++) {
