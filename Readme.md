@@ -10,14 +10,15 @@ Building strong problem-solving skills through daily DSA practice. (am I????)
 
 ## Progress
 
-* Current Streak: 2 days (yayayaya 🎉)
-* Problems Solved: 3 (and surprisingly no panic attacks 😭)
+* Current Streak: 3 days (yayayaya 🎉)
+* Problems Solved: 4 (and surprisingly no panic attacks 😭)
 
 ## Topics Covered
 
 * Array
 * HashMap
 * Brute Force Patterns
+* String
 
 
 ---
