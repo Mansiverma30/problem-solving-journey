@@ -40,7 +40,7 @@ function optimized(strs) {
     return prefix
 }
 
-console.log(bruteForce(["flower", "flow", "flight"]))
+//console.log(bruteForce(["flower", "flow", "flight"]))
 console.log(optimized(["flower", "flow", "flight"]))
 
 // Pattern Learned:

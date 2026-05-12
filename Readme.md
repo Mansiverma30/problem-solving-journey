@@ -10,8 +10,8 @@ Building strong problem-solving skills through daily DSA practice. (am I????)
 
 ## Progress
 
-* Current Streak: 4 days (yayayaya 🎉)
-* Problems Solved: 5 (and surprisingly no panic attacks 😭)
+* Current Streak: 5 days (yayayaya 🎉)
+* Problems Solved: 6 (and surprisingly no panic attacks 😭)
 
 ## Topics Covered
 
@@ -19,7 +19,7 @@ Building strong problem-solving skills through daily DSA practice. (am I????)
 * HashMap
 * Brute Force Patterns
 * String
-
+* two pointers
 
 ---
 
