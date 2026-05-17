@@ -12,7 +12,7 @@ Building strong problem-solving skills through daily DSA practice. (am I????)
 
 * Current Streak: 9 days (yayayaya 🎉)
 * Problems Solved: 11 (and surprisingly no panic attacks 😭)
-* Revision: 1 (for off days, don't make it as an excuse)
+* Revision: 2 (for off days, don't make it as an excuse)
 
 ## Topics Covered
 
