@@ -1,5 +1,5 @@
 // Problem: Sort Colors
-// Input: strs = [2,0,2,1,1,0]
+// Input: nums = [2,0,2,1,1,0]
 // Output: [0,0,1,1,2,2]
 
 // Here I've to return the sorted array containing only 0s, 1s and 2s.
