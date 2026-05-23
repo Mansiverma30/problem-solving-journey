@@ -10,8 +10,8 @@ Building strong problem-solving skills through daily DSA practice. (am I????)
 
 ## Progress
 
-* Current Streak: 15 days (yayayaya 🎉)
-* Problems Solved: 17 (and surprisingly no panic attacks 😭)
+* Current Streak: 16 days (yayayaya 🎉)
+* Problems Solved: 18 (Done and Dusted. 💅)
 * Revision: 2 (for off days, don't make it as an excuse)
 
 ## Topics Covered
@@ -20,7 +20,11 @@ Building strong problem-solving skills through daily DSA practice. (am I????)
 * HashMap
 * Brute Force Patterns
 * String
-* two pointers
+* Two pointers
+* Stack
+* Sliding Window
+* Sorting
+* Prefix/Suffix Products
 
 ---
 
