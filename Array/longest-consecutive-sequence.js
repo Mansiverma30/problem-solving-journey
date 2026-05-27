@@ -29,7 +29,7 @@ function bruteForce(arr) {
 }
 
 // Optimized Solution
-// Time complexity: O(), Space Complexity: O()
+// Time complexity: O(n), Space Complexity: O(n)
 
 // Here I used Set for O(1) lookup. I only started counting from numbers whose previous consecutive element did not exist, because those numbers are the starting points of consecutive sequences
 // Took help from chatgpt, ask to guide me step by step as I was struggling with this question so much
