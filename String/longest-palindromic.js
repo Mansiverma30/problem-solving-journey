@@ -1,7 +1,7 @@
 // Problem: Longest Palindromic Substring
 // Input: s = "babad"
 // Output: "bab" or "aba"
-//
+
 // Here I've to return the longest substring which is a palindrome.
 
 
@@ -57,7 +57,7 @@ function palindrome(res) {
 
 // Optimized Solution (Expand Around Center)
 // Time Complexity: O(n²) Space Complexity: O(1)
-//
+
 // Here I:
 // 1. Treat every index as the center of a palindrome.
 // 2. Expand left and right while characters match.
