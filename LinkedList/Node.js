@@ -68,8 +68,55 @@ function max(head) {
     console.log(max)
 }
 
+function LinkedListToArray(head) {
+    let arr = []
+    let current = head
+    while (current !== null) {
+        arr.push(current.value)
+        current = current.next
+    }
+    console.log(arr)
+}
+
+function ArrayToLinkedList(arr) {
+    let head = new Node(arr[0])
+    let current = head
+    for (let i = 1; i < arr.length; i++) {
+        let newNode = new Node(arr[i])
+        current.next = newNode
+        current = current.next
+    }
+    console.log(head)
+}
+
 printLinkedList(node1)
 countLinkedList(node1)
 console.log(search(node1, 30))
 sum(node1)
 max(node1)
+LinkedListToArray(node1)
+ArrayToLinkedList([10, 20, 30, 40])
+
+/* 
+Linked List Basics Completed
+
+Core Concepts:
+- Node
+- Head
+- Next Pointer
+- Traversal
+
+Operations:
+- Print
+- Count
+- Search
+- Sum
+- Max
+
+Conversions:
+- Linked List → Array
+- Array → Linked List
+
+Status:
+Ready for beginner Linked List problems
+*/
