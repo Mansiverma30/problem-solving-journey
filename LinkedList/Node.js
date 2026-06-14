@@ -89,6 +89,23 @@ function ArrayToLinkedList(arr) {
     console.log(head)
 }
 
+function MiddleofLinkedList(head) {
+    let current = head
+    let count = 0
+    while (current !== null) {
+        count++
+        current = current.next
+    }
+    let middleIndex = Math.floor(count / 2)
+    current = head
+    let index = 0
+    while (index < middleIndex) {
+        current = current.next
+        index++
+    }
+    return current.value
+}
+
 printLinkedList(node1)
 countLinkedList(node1)
 console.log(search(node1, 30))
@@ -96,6 +113,7 @@ sum(node1)
 max(node1)
 LinkedListToArray(node1)
 ArrayToLinkedList([10, 20, 30, 40])
+console.log(MiddleofLinkedList(node1))
 
 /* 
 Linked List Basics Completed
