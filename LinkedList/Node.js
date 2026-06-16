@@ -68,6 +68,16 @@ function max(head) {
     console.log(max)
 }
 
+function min(head) {
+    let current = head
+    let min = head.value
+    while (current !== null) {
+        min = Math.min(min, current.value)
+        current = current.next
+    }
+    console.log("min", min)
+}
+
 function LinkedListToArray(head) {
     let arr = []
     let current = head
@@ -111,6 +121,7 @@ countLinkedList(node1)
 console.log(search(node1, 30))
 sum(node1)
 max(node1)
+min(node1)
 LinkedListToArray(node1)
 ArrayToLinkedList([10, 20, 30, 40])
 console.log(MiddleofLinkedList(node1))
