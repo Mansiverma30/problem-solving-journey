@@ -116,6 +116,30 @@ function MiddleofLinkedList(head) {
     return current.value
 }
 
+function findIndexOfValue(head, target) {
+    let current = head
+    let count = 0
+    while (current !== null) {
+        if (current.value === target) {
+            return count
+        } else count++
+        current = current.next
+    }
+    return -1
+}
+
+function getAtIndex(head, index) {
+    let current = head
+    let count = 0
+    while (current !== null) {
+        if (count === index) {
+            return current.value
+        } else count++
+        current = current.next
+    }
+    return -1
+}
+
 printLinkedList(node1)
 countLinkedList(node1)
 console.log(search(node1, 30))
@@ -125,6 +149,8 @@ min(node1)
 LinkedListToArray(node1)
 ArrayToLinkedList([10, 20, 30, 40])
 console.log(MiddleofLinkedList(node1))
+console.log(findIndexOfValue(node1, 20))
+console.log(getAtIndex(node1, 1))
 
 /* 
 Linked List Basics Completed
