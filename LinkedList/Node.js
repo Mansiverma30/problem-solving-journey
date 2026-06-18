@@ -140,6 +140,16 @@ function getAtIndex(head, index) {
     return -1
 }
 
+function lastElement(head) {
+    let current = head
+    while (current !== null) {
+        if (current.next === null) {
+            return current.value
+        }
+        current = current.next
+    }
+}
+
 printLinkedList(node1)
 countLinkedList(node1)
 console.log(search(node1, 30))
@@ -151,6 +161,7 @@ ArrayToLinkedList([10, 20, 30, 40])
 console.log(MiddleofLinkedList(node1))
 console.log(findIndexOfValue(node1, 20))
 console.log(getAtIndex(node1, 1))
+console.log(lastElement(node1))
 
 /* 
 Linked List Basics Completed
