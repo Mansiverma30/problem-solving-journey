@@ -150,6 +150,29 @@ function lastElement(head) {
     }
 }
 
+function secondLastElement(head) {
+    let current = head
+    while (current.next !== null) {
+        if (current.next.next === null) {
+            return current.value
+        }
+        current = current.next
+    }
+    return -1
+}
+
+function countOccurrences(head, target) {
+    let current = head
+    let count = 0
+    while (current !== null) {
+        if (current.value === target) {
+            count++
+        }
+        current = current.next
+    }
+    console.log(count)
+}
+
 printLinkedList(node1)
 countLinkedList(node1)
 console.log(search(node1, 30))
@@ -162,8 +185,10 @@ console.log(MiddleofLinkedList(node1))
 console.log(findIndexOfValue(node1, 20))
 console.log(getAtIndex(node1, 1))
 console.log(lastElement(node1))
+countOccurrences(node1, 10)
+console.log(secondLastElement(node1))
 
-/* 
+/*
 Linked List Basics Completed
 
 Core Concepts:
