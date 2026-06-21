@@ -116,6 +116,16 @@ function MiddleofLinkedList(head) {
     return current.value
 }
 
+function MiddleofLinkedList2(head) {
+    let fast = head
+    let slow = head
+    while (fast !== null && fast.next !== null) {
+        fast = fast.next.next
+        slow = slow.next
+    }
+    return slow.value
+}
+
 function findIndexOfValue(head, target) {
     let current = head
     let count = 0
@@ -182,6 +192,7 @@ min(node1)
 LinkedListToArray(node1)
 ArrayToLinkedList([10, 20, 30, 40])
 console.log(MiddleofLinkedList(node1))
+console.log(MiddleofLinkedList2(node1))
 console.log(findIndexOfValue(node1, 20))
 console.log(getAtIndex(node1, 1))
 console.log(lastElement(node1))
