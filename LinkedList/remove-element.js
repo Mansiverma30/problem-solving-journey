@@ -20,11 +20,16 @@ node5.next = node6
 
 function removeElement(head, target) {
     let current = head
-    while (current !== null && current.next !== null) {
+    let prev = head
+    if (head.value === target) {
+        head = current.next
+    }
+    while (current !== null) {
         if (current.value === target) {
-            current.next = current.next.next
+            prev.next = current.next
         }
-        else current = current.next
+        prev = current
+        current = current.next
     }
     let res = []
     current = head
@@ -35,4 +40,4 @@ function removeElement(head, target) {
     console.log(res)
 }
 
-removeElement(node1, 3)
+removeElement(node1, 6)
