@@ -10,8 +10,8 @@ Building strong problem-solving skills through daily DSA practice. (am I????)
 
 ## Progress
 
-* Current Streak: 48 days (yayayaya 🎉)
-* Problems Solved: 37 (Done and Dusted. 💅)
+* Current Streak: 49 days (yayayaya 🎉)
+* Problems Solved: 38 (Done and Dusted. 💅)
 * Revision/Practice: 13 (for off days/while starting new ds)
 * Test: 2 (Weekly test hmmmmmmm)
 
