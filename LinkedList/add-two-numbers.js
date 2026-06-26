@@ -43,9 +43,7 @@ function addTwoNumbers(l1, l2) {
 
     }
     if (carry === 1) {
-
         answerTail.next = new Node(carry)
-
     }
     console.log(answerHead)
 }
