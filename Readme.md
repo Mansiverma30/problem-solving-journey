@@ -14,7 +14,7 @@ Building strong problem-solving skills through daily DSA practice. (am I????)
 * Problems Solved: 46 (Done and Dusted. 💅)
 * Revision/Practice: 13 (for off days/while starting new ds)
 * Test: 2 (Weekly test hmmmmmmm)
-* Streak Freezze left (3 per month): 2
+* Streak Freezze left (3 per month): 1
 
 ## Topics Covered
 
