@@ -1,12 +1,19 @@
-function fun(nums, k) {
-    let map = new Map()
-    for (const n of nums) {
-        if (map.has(n)) {
-            map.set(n, (map.get(n) || 0) + 1)
-        } else map.set(n, 1)
+function fun(nums) {
+    let rightProduct = 1
+    let answer = []
+    answer[0] = 1
+
+    for (let i = 1; i < nums.length; i++) {
+        answer[i] = answer[i - 1] * nums[i - 1]
+        console.log(answer)
     }
-    let res = [...map.entries()].sort((a, b) => b[1] - a[1])
-    return res.slice(0, k).map(n => n[0])
+    for (let i = nums.length - 1; i >= 0; i--) {
+        answer[i] *= rightProduct
+        rightProduct *= nums[i]
+        console.log(rightProduct)
+    }
+    return answer
+
 }
 
-console.log(fun([1, 2, 2, 3, 3], 2))
+console.log(fun([1, 2, 4, 6]))
