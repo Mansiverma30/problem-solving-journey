@@ -1,19 +1,16 @@
-function fun(nums) {
-    let maxCount = 0
-    let set = new Set(nums)
-    for (const n of set) {
-        if (!set.has(n - 1)) {
-            let currentNum = n
-            let count = 1
-            while (set.has(currentNum + 1)) {
-                count++
-                currentNum++
-            }
-            maxCount = Math.max(maxCount, count)
+function fun(s) {
+    s = s.toLowerCase().replace(/[^a-z0-9]/g, '')
+    let left = 0
+    let right = s.length - 1
+    while (left < right) {
+        if (s[left !== s[right]]) {
+            return false
         }
+        left++
+        right--
     }
-    return maxCount
+    return true
 }
 
 
-console.log(fun([0, 3, 2, 5, 4, 6, 1, 1]))
+console.log(fun("Was it a car or a cat I saw?"))
