@@ -1,16 +1,20 @@
-function fun(s) {
-    s = s.toLowerCase().replace(/[^a-z0-9]/g, '')
-    let left = 0
-    let right = s.length - 1
-    while (left < right) {
-        if (s[left !== s[right]]) {
-            return false
+function fun(numbers, target) {
+    let idx1 = 0
+    let idx2 = numbers.length - 1
+    while (idx1 < idx2) {
+        console.log(idx1, idx2)
+        if (numbers[idx1] + numbers[idx2] === target) {
+            return [idx1 + 1, idx2 + 1]
         }
-        left++
-        right--
+        else if (numbers[idx1] + numbers[idx2] < target) {
+            idx1++
+        }
+        else {
+            idx2--
+        }
     }
-    return true
+
 }
 
 
-console.log(fun("Was it a car or a cat I saw?"))
+console.log(fun([2, 3, 4], 6))
