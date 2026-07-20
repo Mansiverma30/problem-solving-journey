@@ -1,20 +1,16 @@
-function fun(numbers, target) {
-    let idx1 = 0
-    let idx2 = numbers.length - 1
-    while (idx1 < idx2) {
-        console.log(idx1, idx2)
-        if (numbers[idx1] + numbers[idx2] === target) {
-            return [idx1 + 1, idx2 + 1]
+function fun(s) {
+    let stack = []
+    for (let i = 0; i < s.length; i++) {
+        if (s[i] === "(" || s[i] === "[" || s[i] === "{") {
+            stack.push(s[i])
         }
-        else if (numbers[idx1] + numbers[idx2] < target) {
-            idx1++
-        }
-        else {
-            idx2--
-        }
+        else if ((s[i] === ")" && stack[stack.length - 1] === "(") || (s[i] === "]" && stack[stack.length - 1] === "[") || (s[i] === "}" && stack[stack.length - 1] === "{")) {
+            stack.pop()
+        } else { return false }
     }
-
+    return stack.length === 0
 }
 
 
-console.log(fun([2, 3, 4], 6))
+console.log(fun('([{}])'))
+console.log(fun('[(])'))
