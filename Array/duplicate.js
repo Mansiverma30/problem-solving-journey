@@ -1,13 +1,17 @@
 function duplicate(nums) {
     let slow = 0
     let fast = 0
-    while (fast < nums.length) {
+    do {
         slow = nums[slow]
         fast = nums[nums[fast]]
-        if (nums[fast] === nums[slow]) {
-            return nums[fast]
-        }
+    } while (slow !== fast);
+
+    let ptr = 0
+    while (ptr !== slow) {
+        ptr = nums[ptr]
+        slow = nums[slow]
     }
+    return ptr
 }
 
-console.log(duplicate([3, 1, 3, 4, 2]))
+console.log(duplicate([2, 5, 9, 6, 9, 3, 8, 9, 7, 1]))
