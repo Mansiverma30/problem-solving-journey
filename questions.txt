@@ -2,6 +2,5 @@ Implement Stack using Queues - queue
 Swap Nodes in Pairs - linked list
 Search a 2D Matrix - binary search
 Basic Calculator II - stack
-String Compression - string
 Maximum Erasure Value - sliding window
 Find Minimum in Rotated Sorted Array II - binary search
