@@ -1,29 +1,16 @@
-function fun(nums) {
-    nums = nums.sort((a, b) => a - b)
-    let ans = []
-    for (let i = 0; i < nums.length; i++) {
-        let left = i + 1
-        let right = nums.length - 1
-        if (i > 0 && nums[i] === nums[i - 1]) continue
-        while (left < right) {
-            let sum = nums[i] + nums[left] + nums[right]
-            if (sum < 0) left++
-            else if (sum > 0) right--
-            else if (sum === 0) {
-                ans.push([nums[i], nums[left], nums[right]])
-                left++
-                right--
-                while (left < right && nums[left] === nums[left - 1]) {
-                    left++
-                }
-                while (left < right && nums[right] === nums[right + 1]) {
-                    right--
-                }
-            }
+function fun(temperatures) {
+    let stack = []
+    let res = new Array(temperatures.length).fill(0)
+    for (let i = 0; i < temperatures.length; i++) {
+        while (stack.length > 0 && temperatures[i] > temperatures[stack[stack.length - 1]]) {
+            let topIdx = stack[stack.length - 1]
+            res[topIdx] = i - topIdx
+            stack.pop()
         }
+        stack.push(i)
     }
-    return ans
+    return res
 }
 
 
-console.log(fun([-1, 0, 1, 2, -1, -4]))
+console.log(fun([30, 38, 30, 36, 35, 40, 28]))
