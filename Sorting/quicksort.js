@@ -1,7 +1,7 @@
 function partition(left, nums, right) {
     let pivot = nums[right]
     let i = left
-    for (let j = 0; j < nums.length - 1; j++) {
+    for (let j = left; j < right; j++) {
         if (nums[j] < pivot) {
             let temp = nums[i]
             nums[i] = nums[j]
@@ -10,29 +10,21 @@ function partition(left, nums, right) {
         }
     }
     let temp = nums[i]
-    nums[i] = pivot
-    pivot = temp
-    return nums
+    nums[i] = nums[right]
+    nums[right] = temp
+    return i
 }
 
-function quickSort(nums) {
-    let pivot = nums[nums.length - 1]
-    let left = 0
-    let right = nums.length - 2
-    while (left < right) {
-        if (nums[left] < pivot) {
-            let temp = nums[left]
-            nums[left] = nums[right]
-            nums[right] = temp
-        }
-        left++
-        right--
+function quickSort(nums, left = 0, right = nums.length - 1) {
+    if (left < right) {
+        let pivotIndex = partition(left, nums, right)
+        quickSort(nums, left, pivotIndex - 1)
+        quickSort(nums, pivotIndex + 1, right)
     }
-    console.log(pivot, nums[left], nums[right])
     return nums
 }
 
-console.log(partition(0, [5, 1, 4, 2, 8], 5))
+console.log(quickSort([5, 1, 4, 2, 8]))
 
 /*
 1. Choose the highest index value has pivot
